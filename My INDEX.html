@@ -2,6 +2,62 @@
 <html lang="en">
 
 <head>
+<style>
+  body {
+      height: 700px;
+  }
+
+  .item{
+    margin-left:-10px;
+    margin-right:-10px;
+    height:700px;
+  }
+
+  @media (min-width: 1200px) {
+    .item{
+      margin-top: 40px;
+    }
+    .carousel-caption{
+      bottom: 70px;
+    }
+  }
+
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .item{
+      margin-top: 90px;
+    }
+    .carousel-caption{
+      bottom: 120px;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991px){
+    .item{
+      margin-top: 90px;
+    }
+    .carousel-caption{
+      bottom: 120px;
+    }
+  }
+
+  @media (min-width: 488px) and (max-width: 767px) {
+    .item{
+      margin-top: 40px;
+    }
+    .carousel-caption{
+      bottom: 70px;
+    }
+  }
+
+  @media (max-width: 487px){
+    .item{
+      margin-top: 90px;
+    }
+    .carousel-caption{
+      bottom: 120px;
+    }
+  }
+</style>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -101,52 +157,55 @@
         <div class="carousel-inner">
             <div id="#map1" class="item active">
                 <!-- Set the first background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Map 1');"></div>
+                <iframe src="map/Map1Pirate.html" height=700px width=100%></iframe>
                 <div class="carousel-caption">
-                    <h2>Caption 1</h2>
+                    <h2>This is my Pirate Basemap Map of Jakarta</h2>
                 </div>
             </div>
             <div id="#map2"class="item">
                 <!-- Set the second background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Map 2');"></div>
+                <iframe src="map/Q4.html" height=700px width=100%></iframe>
                 <div class="carousel-caption">
-                    <h2>Caption 2</h2>
+                    <h2>Three Important Places</h2>
                 </div>
             </div>
-            <div class="item">
+            <div id="#map3"class="item">
                 <!-- Set the third background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Map 3');"></div>
+                <iframe src="map/color.html" height=700px width=100%></iframe>
                 <div class="carousel-caption">
-                    <h2>Caption 3</h2>
+                    <h2>Population Density of the London Burroughs Area</h2>
                 </div>
             </div>
 
-            <div class="item">
+              <div id="#map4"class="item">
                 <!-- Set the fourth background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Map Midterm');"></div>
+                <iframe src="map/Midterm.html" height=700px width=100%></iframe>
                 <div class="carousel-caption">
-                    <h2>Caption Midterm</h2>
+                    <h2>5 Great Places on Campus</h2>
                 </div>
             </div>
-            <div class="item">
+
+              <div id="#map5"class="item">
                 <!-- Set the fourth background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Map 4');"></div>
+                  <iframe src="map/style.html" height=700px width=100%></iframe>
                 <div class="carousel-caption">
-                    <h2>Caption 4</h2>
+                    <h2>Hexbinning of Chicago Robberies in 2015</h2>
                 </div>
             </div>
-            <div class="item">
+
+            <div id="#map6"class="item">
                 <!-- Set the fourth background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Map 5');"></div>
+              <iframe src="map/map5.html" height=700px width=100%></iframe>
                 <div class="carousel-caption">
-                    <h2>Caption 5</h2>
+                    <h2>Ethnic Group Percentages of the London Burroughs Area</h2>
                 </div>
             </div>
-            <div class="item">
+
+            <div id="#map7"class="item">
                 <!-- Set the fourth background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Map 6');"></div>
+                <iframe src="map/custom.html" height=700px width=100%></iframe>
                 <div class="carousel-caption">
-                    <h2>Caption 6</h2>
+                    <h2>My Everyday Animated Path</h2>
                 </div>
             </div>
             <div class="item">
@@ -216,7 +275,7 @@
     <!-- Script to Activate the Carousel -->
     <script>
     $('.carousel').carousel({
-        interval: 5000 //changes the speed
+        interval: 12000 //changes the speed
     })
     </script>
 
